@@ -5,20 +5,10 @@ import java.util.*;
 public class HotelReservationSystem {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
-        // Define hotel rooms
         String[] rooms = {"101", "102", "103", "104", "105"};
-
-        // Define room types
         String[] roomTypes = {"Single", "Double", "Suite"};
-
-        // Define room rates
         double[] roomRates = {100.0, 200.0, 500.0};
-
-        // Initialize room status
         boolean[] roomStatus = new boolean[rooms.length];
-
-        // Main menu
         while (true) {
             System.out.println("Hotel Reservation System");
             System.out.println("1. Check Availability");
@@ -58,8 +48,6 @@ public class HotelReservationSystem {
             }
         }
     }
-
-    // Method to make a reservation
     public static void makeReservation(String[] rooms, String[] roomTypes, double[] roomRates, boolean[] roomStatus, Scanner scanner) {
         System.out.print("Enter room number: ");
         String roomNumber = scanner.next();
@@ -80,8 +68,6 @@ public class HotelReservationSystem {
             System.out.println("Room not available!");
         }
     }
-
-    // Method to cancel a reservation
     public static void cancelReservation(String[] rooms, boolean[] roomStatus, Scanner scanner) {
         System.out.print("Enter room number: ");
         String roomNumber = scanner.next();
