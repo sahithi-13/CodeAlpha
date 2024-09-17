@@ -36,8 +36,6 @@ public class HotelReservationSystem {
             }
         }
     }
-
-    // Method to check room availability
     public static void checkAvailability(String[] rooms, boolean[] roomStatus) {
         System.out.println("Room Availability:");
         for (int i = 0; i < rooms.length; i++) {
